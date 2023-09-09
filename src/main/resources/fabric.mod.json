@@ -1,35 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "geralt",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Geralt of Rivia",
   "description": "This is an example description! Tell everyone what your mod is about!",
-  "authors": [
-    "Me!"
-  ],
+  "authors": ["true_mogician"],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/truemogician-s-Minecraft-Mods/Geralt-of-Rivia",
+    "sources": "https://github.com/truemogician-s-Minecraft-Mods/Geralt-of-Rivia"
   },
 
   "license": "LGPL-3.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/geralt/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleModKt::init"
+      {
+        "adapter": "kotlin",
+        "value": "com.github.truemogician.GeraltOfRivia"
+      }
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "geralt.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.8.7",
+    "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "fabric-language-kotlin": "*",
-    "minecraft": "1.18.x"
+    "minecraft": "${minecraft_version}"
   },
   "suggests": {
     "flamingo": "*"

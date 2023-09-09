@@ -1,12 +1,10 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.github.truemogician.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
-  "client": [
-    "ExampleMixin"
-  ],
+  "client": ["ExampleMixin"],
   "injectors": {
     "defaultRequire": 1
   }
